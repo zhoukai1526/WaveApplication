@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.iwintrue.waveapplication.MainActivity">
+
+    <com.iwintrue.waveapplication.WaveView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:waveLength = "600"
+        app:waveHeight = "50"
+        app:waveSpeed = "10"
+        app:waveColor = "#0ff"
+        app:distanceY = "100"
+        app:waveTopIcon = "@mipmap/icon"
+        android:id="@+id/waterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
