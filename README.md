@@ -1,7 +1,7 @@
 # WaveApplication
 水波纹效果控件，
 可以在水波上方添加图片，图片会随水波上下浮动.<br>
-<b>attrs属性：</b>
+<h3><b>attrs属性：</b><h3>
 
 <pre><code>
  <declare-styleable name="waveStyleable">
@@ -16,15 +16,15 @@
         &lt;!--水波的颜色 -->
         &lt;attr name="waveColor" format="color"&gt; &lt;/attr&gt;
         &lt;!--水波距离底部的距离 -->
-        &lt;attr name="distanceY" format="float"&gt; &lt;/attr>
+        &lt;attr name="distanceY" format="float"&gt; &lt;/attr&gt;
 
     </declare-styleable>
 
 </code></pre><br>
 
-<b>xml文件引入</b>
+<h3><b>xml文件引入</b></h3>
 <pre><code>
-  <com.iwintrue.waveapplication.WaveView
+   &lt;com.iwintrue.waveapplication.WaveView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:waveLength = "600"
         app:waveHeight = "50"
@@ -36,9 +36,9 @@
         android:id="@+id/waterView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        />
+        /&gt;
 
 </code></pre><br>
 
-效果图如下：<br>
+<h3><b>>效果图如下：</b></h3<br><br><br>
 ![zhoukai1526](https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif)  
