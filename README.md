@@ -42,4 +42,4 @@
 
 <h3><b>效果图如下：</b></h3>
 <br><br>
-![zhoukai1526](https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif)
+<img src="https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif"></img>
