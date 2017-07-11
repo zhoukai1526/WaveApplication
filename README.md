@@ -5,18 +5,18 @@
 
 <pre><code>
  <declare-styleable name="waveStyleable">
-        <!-- 水波纹的长度-->
-        <attr name="waveLength" format="float"></attr>
-        <!-- 水波纹的高度-->
-        <attr name="waveHeight" format="float"></attr>
-        <!-- 水波纹的速度-->
-        <attr name="waveSpeed" format="float"></attr>
-        <!--水波纹上方的头像 -->
-        <attr name="waveTopIcon" format="reference"></attr>
-        <!--水波的颜色 -->
-        <attr name="waveColor" format="color"></attr>
-        <!--水波距离底部的距离 -->
-        <attr name="distanceY" format="float"></attr>
+        &lt;!-- 水波纹的长度--&gt;
+        &lt;attr name="waveLength" format="float"&gt; &lt;/attr&gt;
+         &lt;!-- 水波纹的高度-->
+        &lt;attr name="waveHeight" format="float"&gt; &lt;/attr&gt;
+        &lt;!-- 水波纹的速度-->
+        &lt;attr name="waveSpeed" format="float"&gt; &lt;/attr&gt;
+        &lt;!--水波纹上方的头像 -->
+        &lt;attr name="waveTopIcon" format="reference"&gt; &lt;/attr&gt;
+        &lt;!--水波的颜色 -->
+        &lt;attr name="waveColor" format="color"&gt; &lt;/attr&gt;
+        &lt;!--水波距离底部的距离 -->
+        &lt;attr name="distanceY" format="float"&gt; &lt;/attr>
 
     </declare-styleable>
 
