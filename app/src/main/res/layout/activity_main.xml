@@ -4,7 +4,6 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context="com.iwintrue.waveapplication.MainActivity">
 
     <com.iwintrue.waveapplication.WaveView
@@ -15,8 +14,9 @@
         app:waveColor = "#0ff"
         app:distanceY = "100"
         app:waveTopIcon = "@mipmap/icon"
+        android:layout_centerInParent="true"
         android:id="@+id/waterView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         />
 </RelativeLayout>
