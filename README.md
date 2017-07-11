@@ -41,5 +41,5 @@
 </code></pre><br>
 
 <h3><b>效果图如下：</b></h3>
-<br><br><br>
-![zhoukai1526](https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif)  
+<br><br>
+![zhoukai1526](https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif)
