@@ -4,7 +4,7 @@
 <h3><b>attrs属性：</b><h3>
 
 <pre><code>
- <declare-styleable name="waveStyleable">
+ &lt;declare-styleable name="waveStyleable"&gt;
         &lt;!-- 水波纹的长度--&gt;
         &lt;attr name="waveLength" format="float"&gt; &lt;/attr&gt;
          &lt;!-- 水波纹的高度-->
@@ -18,7 +18,7 @@
         &lt;!--水波距离底部的距离 -->
         &lt;attr name="distanceY" format="float"&gt; &lt;/attr&gt;
 
-    </declare-styleable>
+&lt;/declare-styleable&gt;
 
 </code></pre><br>
 
@@ -40,5 +40,6 @@
 
 </code></pre><br>
 
-<h3><b>>效果图如下：</b></h3<br><br><br>
+<h3><b>效果图如下：</b></h3>
+<br><br><br>
 ![zhoukai1526](https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif)  
