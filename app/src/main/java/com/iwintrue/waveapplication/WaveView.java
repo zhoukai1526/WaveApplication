@@ -15,6 +15,7 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -51,6 +52,7 @@ public class WaveView extends View {
         waveHeight = array.getFloat(R.styleable.waveStyleable_waveHeight,100);
         waveSpeed = array.getFloat(R.styleable.waveStyleable_waveSpeed,5);
         distanceY = array.getFloat(R.styleable.waveStyleable_distanceY,100);
+
         Drawable waveTopICon = array.getDrawable(R.styleable.waveStyleable_waveTopIcon);
         array.recycle();
         bitmap = drawableToBitmap(waveTopICon);
@@ -129,13 +131,37 @@ public class WaveView extends View {
         animator.start();
     }
 
+
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        width = MeasureSpec.getSize(widthMeasureSpec);
-        height = MeasureSpec.getSize(heightMeasureSpec);
+
+        //获取宽高模式
+        int widthMode  = MeasureSpec.getMode(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        width  = MeasureSpec.getSize(widthMeasureSpec);
+        height  = MeasureSpec.getSize(heightMeasureSpec);
+
+        if (widthMode == MeasureSpec.AT_MOST){
+            width = (int) waveLength;
+        }
+        if(heightMode == MeasureSpec.AT_MOST){
+            height = (int) (waveHeight+ distanceY+bitmap.getHeight());
+        }
         setMeasuredDimension(width,height);
 
+    }
+
+    /**
+     * dp转化为px
+     * @param dpValue
+     * @param context
+     * @return
+     */
+
+    public  float  dp2px(float dpValue,Context context){
+        return  TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,dpValue,context.getResources().getDisplayMetrics());
     }
 
     /**
