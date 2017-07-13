@@ -43,3 +43,9 @@
 <h3><b>效果图如下：</b></h3>
 <br><br>
 <img src="https://github.com/zhoukai1526/WaveApplication/blob/master/app/src/main/raw/waveGif.gif"></img>
+<br>
+<h3><b>注意：</b></h3>
+<ul>
+<li>水波纹上方的头像必须设置</li>
+<li>如果水波纹view的宽高有设置为wrapContent,则宽为水波纹的宽度，高度为头像高度+水波纹高度+水波纹距底部的高度</li>
+</ul>
